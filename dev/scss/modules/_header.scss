@@ -1,0 +1,44 @@
+.header {
+    background:linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ), url("/img/Frontpage.jpg");
+    background-position: center;
+    background-size: cover;
+    
+    position: relative;
+    
+    height: 100vh;
+    width: 100%;
+    
+    @include e('center') {
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+    
+    @include e('h1') {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+        font-size: 6em;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+    }
+    
+    @include e('h2') {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding-top: 15px;
+        font-weight: 300;
+        font-size: 2.5em;
+        color: darken(#fff, 18%);
+        text-align: center;
+    }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["angular","module"],"mappings":"CAAA,WACI,YACUA,SAAQC,OAAO,QAAS","file":"app.js","sourcesContent":["(function () {\r\n    'use strict';\r\n    var app = angular.module('main', ['routes']);\r\n})();"],"sourceRoot":"/source/"}

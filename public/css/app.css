@@ -1,0 +1,291 @@
+/* Navigation variables */
+
+/* Navigation module */
+
+.nav
+{
+    z-index: 9999;
+
+    width: 100%;
+
+    background: #000;
+}
+
+.nav--nav-top
+{
+    position: fixed;
+    top: 0;
+
+    height: 50px;
+}
+
+.nav__list
+{
+    display: block;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav__list:after
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+.nav__list:before
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+.nav__list--nav-top
+{
+    width: 100%;
+    height: 50px;
+
+    text-align: center;
+}
+
+.nav__list-item
+{
+    width: auto;
+    height: 100%;
+}
+
+.nav__list-item--nav-top
+{
+    display: inline-block;
+
+    width: 150px;
+    height: 50px;
+
+    -webkit-transition: background-color .4s;
+            transition: background-color .4s;
+
+    background: inherit;
+}
+
+.nav__list-item--nav-top:hover
+{
+    background: #fff;
+}
+
+.nav__list-item--nav-top:hover .nav__link--nav-top
+{
+    color: #000;
+}
+
+.nav__list-item--active
+{
+    background: #fff;
+}
+
+.nav__link
+{
+    text-decoration: none;
+
+    color: #000;
+}
+
+.nav__link--nav-top
+{
+    line-height: 50px;
+
+    -webkit-transition: color .4s;
+            transition: color .4s;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.nav__link--nav-top:hover
+{
+    color: #000;
+}
+
+.nav__link--active
+{
+    color: #000;
+}
+
+.header
+{
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('/img/Frontpage.jpg');
+    background:         linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('/img/Frontpage.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.header__center
+{
+    position: absolute;
+    top: 50%;
+
+    width: 100%;
+
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.header__h1
+{
+    font-size: 6em;
+    font-weight: 300;
+
+    display: block;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.header__h2
+{
+    font-size: 2.5em;
+    font-weight: 300;
+
+    display: block;
+
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+
+    text-align: center;
+
+    color: #d1d1d1;
+}
+
+.cases
+{
+    width: 100%;
+    height: calc(100vh - 50px);
+    padding-top: 50px;
+}
+
+.cases__filler
+{
+    display: none;
+
+    width: 100%;
+    height: 50px;
+}
+
+.cases__heading
+{
+    font-size: 2.6em;
+    font-weight: 300;
+
+    margin: 0;
+
+    text-align: center;
+    letter-spacing: 3.5px;
+
+    color: #fff;
+    border-bottom: 1px solid #262626;
+}
+
+.cases__image
+{
+    width: 100%;
+    height: auto;
+}
+
+.cases__sidebar
+{
+    float: left;
+
+    width: 25%;
+    height: 100%;
+
+    background: #121212;
+}
+
+.cases__case-view
+{
+    float: left;
+    overflow-y: scroll;
+
+    width: 75%;
+    height: 100%;
+}
+
+.cases__list
+{
+    width: 100%;
+}
+
+.cases__list-item
+{
+    width: 100%;
+
+    color: #fff;
+}
+
+.cases__text-container
+{
+    width: 100%;
+}
+
+.cases__case-title
+{
+    font-size: 2.6em;
+    font-weight: 300;
+
+    margin: 0;
+    padding: 20px;
+
+    text-align: center;
+    text-align: center;
+    letter-spacing: 3.5px;
+}
+
+.cases__case-description
+{
+    padding: 0 20px;
+}
+
+.cases:after
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+.cases:before
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+html,
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/*# sourceMappingURL=maps/app.css.map */

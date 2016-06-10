@@ -1,0 +1,16 @@
+<div class="cases">
+    <div class="cases__sidebar">
+       <div class="cases__filler"></div>
+       <h1 class="cases__heading">Cases</h1>
+       <ul class="cases__list">
+           <li class="cases__list-item" ng-repeat="case in cases"><a ui-sref="cases({slug: case.slug})">{{ case.title }}</a></li>
+       </ul>
+    </div>
+    <div class="cases__case-view">
+        <img src="{{ currentCase.image }}" alt="{{ currentCase.title }}" class="cases__image">
+        <div class="cases__text-container">
+            <h2 class="cases__case-title">{{ currentCase.title }}</h2>
+            <p class="cases__case-description">{{ currentCase.description }}</p>
+        </div>
+    </div>
+</div>

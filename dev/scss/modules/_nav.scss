@@ -1,0 +1,76 @@
+/* Navigation variables */
+$nav-top-height: 50px;
+$nav-background: #000;
+
+/* Navigation module */
+.nav {
+    background-color: $nav-background;
+    width: 100%;
+    z-index: 9999;
+    
+    
+    @include m('nav-top') {
+        height: $nav-top-height;
+        position: fixed;
+        top: 0;
+    }
+    
+    @include e('list') {
+        display: block;
+        padding: 0;
+        margin: 0;
+        
+        @include cf;
+        
+        @include m('nav-top') {
+            @include size(100%, $nav-top-height);
+            text-align: center;
+        }
+    }
+
+    @include e('list-item') {
+        @include size(auto, 100%);
+        
+        @include m('nav-top') {
+            height: $nav-top-height;
+            background-color: inherit;
+            width: 150px;          
+            display: inline-block;
+            transition: background-color 0.4s;
+            
+            &:hover {
+                background-color: #ffffff;
+                
+                .nav__link--nav-top {
+                    color: #000;
+                }
+            }
+        }
+        
+        @include m('active') {
+            background-color: #ffffff;
+        }
+    }
+
+    @include e('link') {
+        color: #000;
+        text-decoration: none;
+        
+        @include m('nav-top') {
+            color: #fff;
+            text-align: center;
+            line-height: $nav-top-height;
+            transition: color 0.4s;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            
+            &:hover {
+                color: #000;
+            }
+        }
+        
+        @include m('active') {
+            color: #000;
+        }
+    }
+}
